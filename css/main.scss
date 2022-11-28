@@ -1,0 +1,48 @@
+//vars
+$titleColor: yellow;
+
+//clases
+.empresaFlex{
+display: flex;
+    justify-content: center; 
+}
+.h1Class h1 {
+font-family: Nerko One;
+color: $titleColor;
+}
+
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 425px){
+    /* Hecho con bootstrap (utilice sistema de grillas) */
+}
+
+/* Tablet */
+@media (min-width: 425px) and (max-width: 768px){
+    /* Hecho con bootstrap (utilice sistema de grillas) */
+}
+
+/* Laptop */
+@media (min-width: 768px) and (max-width: 2560px){
+    /* Hecho con bootstrap (utilice sistema de grillas) */
+}
+
+
+
+
+/* Practica y recordatorio */
+// bucles @for (esto lo tengo porque practique, espero no moleste)
+@for $i from 1 to 10 {
+    .fontSize#{$i} {
+        font-size: 12px * $i;
+    }
+}
+
+//@each
+@each $textcolor in yellow, grey, orange, tomato {
+    .tc-#{$textcolor} {
+        color: $textcolor;
+    }
+}
+
+
