@@ -1,15 +1,29 @@
+//import
+@import "mixin.scss";
+@import "extend.scss";
+@import "colorfont.scss";
+
+
 //vars
 $titleColor: yellow;
+$parrafo: orange;
 
 //clases
 .empresaFlex{
 display: flex;
     justify-content: center; 
 }
+
 .h1Class h1 {
-font-family: Nerko One;
-color: $titleColor;
+    @include titulo();
 }
+
+.parrafo {
+color: $parrafo;
+text-align: center;
+font-size: 1.2em;
+}
+
 
 
 /* Mobile */
@@ -30,19 +44,6 @@ color: $titleColor;
 
 
 
-/* Practica y recordatorio */
-// bucles @for (esto lo tengo porque practique, espero no moleste)
-@for $i from 1 to 10 {
-    .fontSize#{$i} {
-        font-size: 12px * $i;
-    }
-}
 
-//@each
-@each $textcolor in yellow, grey, orange, tomato {
-    .tc-#{$textcolor} {
-        color: $textcolor;
-    }
-}
 
 
