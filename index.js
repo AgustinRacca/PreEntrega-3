@@ -1,8 +1,8 @@
-
-let nombre = prompt ("Ingrese su Nombre")
+let nombre = prompt ("Ingrese su Nombre");
 console.log(nombre);
 
-alert (`Bienvenido a TodoMuebles ${nombre}`);
+    alert (`Bienvenido a TodoMuebles ${nombre}`);
+
 
 const productos = [
     {nombre: "armario", precio: 20000},
@@ -66,3 +66,24 @@ while(seleccion == "no"){
 
 const total = carrito.reduce ((acc, el) => acc + el.precio * el.unidades, 0)
 console.log (`El total a pagar es: ${total}`)
+
+let mueble = ["armario", "mueble sala", "sillon", "mesa y sillas"]
+
+let explicacion = prompt ("Quiere informarse de nuestros muebles?. Responda si/no")
+    if (explicacion =="si") {
+        alert(`Nuestros muebles ${mueble[0]} y ${mueble[2]} estan hechos con madera de pino, mientras que nuestros muebles ${mueble[1]} y ${mueble[3]} estan hechos con madera de roble`)
+    }else{
+        alert("Gracias por su visita")
+    }
+
+
+
+
+
+
+
+
+
+
+
+
